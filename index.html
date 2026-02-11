@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API Interaction Project</title>
-
 </head>
 <body>
     <h1>JSON API Explorer</h1>
     
+    <!-- Section 1: Create New Post -->
     <section>
         <h2>Create New Post</h2>
         <form id="postForm">
@@ -22,13 +22,20 @@
             </div>
             <button type="submit">Submit Post</button>
         </form>
-        <div id="formError"></div>
-        <div id="formSuccess"></div>
+        <div id="formError" style="color:red;"></div>
+        <div id="formSuccess" style="color:green;"></div>
     </section>
 
+    <!-- Section 2: Posts List -->
     <section>
         <h2>Posts</h2>
         <button id="fetchButton">Fetch Posts</button>
+
+        <!-- Search input for filtering posts -->
+        <div>
+            <input id="searchInput" type="text" placeholder="Search posts...">
+        </div>
+
         <div id="error"></div>
         <div id="postList"></div>
     </section>
